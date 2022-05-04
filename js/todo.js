@@ -1,11 +1,12 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input"); // Because we already configured toDoForm, and the input is inside of toDoForm
 const toDoList = document.getElementById("todo-list");
+const TODOS_KEY = "toDos";
 
-const toDos = [];//localStorage only save String (Text) not array
+let toDos = [];//localStorage only save String (Text) not array // toDos[] is always empty (we don't want to) so we changed to let
 
 function saveToDos(){
-    localStorage.setItem("todos", toDos);
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
 
@@ -41,3 +42,14 @@ function handleToDoSubmit(event) {
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+console.log("savedToDos:" + savedToDos);
+
+if (savedToDos !== null) {
+    const parsedToDos = JSON.parse(savedToDos);
+    //console.log("parsedToDos: " + parsedToDos);
+    toDos = parsedToDos; // Becasue toDos is always empty array, if there is item, then we need to save it to toDos[]
+    //parsedToDos.forEach((item) => console.log("this is the turn of " + item)); // execute function about each item of array (arrow fucntion)
+    parsedToDos.forEach(paintToDo); // forEach item is the text that we want to send to paintToDo function (show on the webpage)
+}
