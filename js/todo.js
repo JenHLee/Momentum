@@ -13,14 +13,18 @@ function saveToDos(){
 function deleteToDo(event){
     //console.log("deleteToDo is working")
     const li = event.target.parentElement; // can check which button is clicked ->  button's parent is li
+    //console.log(li.id);
     li.remove();
+    toDos = toDos.filter((todo) => todo.id !== parseInt(li.id)); //li.id type is String -> parseInt
+    saveToDos();
 }
 
-function paintToDo(newTodo) {
+function paintToDo(newTodoObj) {
     //console.log("I will paint", newTodo);
     const li = document.createElement("li");
+    li.id = newTodoObj.id;
     const span = document.createElement("span");
-    span.innerText = newTodo;
+    span.innerText = newTodoObj.text;
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
@@ -36,8 +40,13 @@ function handleToDoSubmit(event) {
     //console.log("toDoInput: " + toDoInput.value);
     toDoInput.value = "";
     //console.log("newTodo: " + newTodo);
-    toDos.push(newTodo);
-    paintToDo(newTodo);
+    const newTodoObj = {
+        text: newTodo,
+        id: Date.now(),
+    };
+    console.log("newTodoObj text: " + newTodoObj.text + " newTodoObj id: " + newTodoObj.id);
+    toDos.push(newTodoObj);
+    paintToDo(newTodoObj);
     saveToDos();
 }
 
@@ -53,3 +62,5 @@ if (savedToDos !== null) {
     //parsedToDos.forEach((item) => console.log("this is the turn of " + item)); // execute function about each item of array (arrow fucntion)
     parsedToDos.forEach(paintToDo); // forEach item is the text that we want to send to paintToDo function (show on the webpage)
 }
+
+fucntion 
