@@ -12,21 +12,20 @@
 <body>
     <div id="weather">
         <span></span>
-
         <span></span>
     </div>
-    <h2 id="clock">00:00</h2>
-    <div id="name-question">Hello, what's your name?</div>
-    <form class="hidden" id="login-form">
+    <h2 id="clock" class="hidden">00:00</h2>
+    <div id="name-question" class="hidden">Hello, what's your name?</div>
+    <form id="login-form" class="hidden">
         <!-- input trigger is form-->
         <input required maxlength="15" type="text"/>
         <!--<input type="submit" value="Login" />-->
         <!-- if there is no input anymore in form, and if user press enter -> it is automatically submitted -->
 
     </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <div id="todo-question">What is your main focus for today?</div> 
-    <form id="todo-form">
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="todo-question" class="hidden">What is your main focus for today?</div> 
+    <form id="todo-form" class="hidden">
         <input type="text" required />
     </form>
     <ul id="todo-list">
@@ -35,9 +34,7 @@
         <span></span>
         <span></span>
     </div>
-
-    <script src="js/clock.js"></script>
-    <script src="js/greeting.js"></script>
+    <script src="js/greetingClock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>

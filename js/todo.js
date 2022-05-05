@@ -62,5 +62,3 @@ if (savedToDos !== null) {
     //parsedToDos.forEach((item) => console.log("this is the turn of " + item)); // execute function about each item of array (arrow fucntion)
     parsedToDos.forEach(paintToDo); // forEach item is the text that we want to send to paintToDo function (show on the webpage)
 }
-
-fucntion 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 img {
@@ -49,8 +49,10 @@ img {
     align-items: center;
     justify-content: center;
     color: rgba(255, 255, 255, 0.80);
+    font-size: 2rem;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
 }
 
 #greeting {
@@ -80,6 +82,9 @@ img {
 }
 
 input, textarea {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.2rem;
     padding-top: 0.5rem;
     border: 0;
     outline: 0;
