@@ -18,4 +18,5 @@ Achieve your goals faster and more consistently with your own personal dashboard
 
 ## :computer: Live Demo
 ![momentum](https://user-images.githubusercontent.com/97131199/167239249-176f0ebf-569e-41f7-a84a-fb1ddde2edfb.gif)
+  https://jenhlee.github.io/momentum/
 
