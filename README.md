@@ -8,7 +8,7 @@ Featuring to-do lists, weather, daily photos, and encouraging quotes. <br>
 - Save username in localStorage with JSON.
 - Easy to use to-do list manager, save to-do list in localStrage with JSON.
 - Give different greeting depending on time-set (Good morning, Good afternoon, Good evening)
-- Local weather info with icon using Open Weather Map API.
+- Local weather info with weather icon using Open Weather Map API.
 - Give several Unsplash background images randomly.
 - Give About 200 Quotes to encourage randomly using Quotable API. 
 
@@ -24,6 +24,6 @@ Featuring to-do lists, weather, daily photos, and encouraging quotes. <br>
 
 
 ## :computer: Live Demo
-![momentum](https://user-images.githubusercontent.com/97131199/167239249-176f0ebf-569e-41f7-a84a-fb1ddde2edfb.gif)<br>
+![momentum](https://user-images.githubusercontent.com/97131199/168972911-aa968c70-673d-409d-86d9-de73503b16f0.gif)<br>
   https://jenmomentum.netlify.app/
 
