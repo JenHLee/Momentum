@@ -1,11 +1,13 @@
 # Momentum
 Clone coding of Mementum Google Chrome Extension.
 Personal dashboard featuring to-do, weather, and inspiration.
-Achieve your goals faster and more consistently with your own personal dashboard. Featuring to-do lists, weather, daily photos, and encouraging quotes. <br>
+Achieve your goals faster and more consistently with your own personal dashboard. 
+Featuring to-do lists, weather, daily photos, and encouraging quotes. <br>
 
 ## 🌱 Features 
 - Save username in localStorage with JSON.
-- Easy to use to-do list manager.
+- Easy to use to-do list manager, save to-do list in localStrage with JSON.
+- Give different greeting depending on time-set (Good morning, Good afternoon, Good evening)
 - Local weather info with icon using Open Weather Map API.
 - Give several Unsplash background images randomly.
 - Give About 200 Quotes to encourage randomly using Quotable API. 
