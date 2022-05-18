@@ -1,4 +1,4 @@
-# Momentum
+# Momentum Chrome App
 Clone coding of Mementum Google Chrome Extension.
 Personal dashboard featuring to-do, weather, and inspiration.
 Achieve your goals faster and more consistently with your own personal dashboard. 
