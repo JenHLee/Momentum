@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
 .hidden {
     visibility: hidden;
+}
+#icon{
+    display: block;
+    margin-left: auto;
+    padding-right: 52px;
+    padding-top: 7px;
+    z-index: 0;
+    width: 30px;
+    float: right;
+    align-items: right;
+    justify-content: right;
+    align-content: right;
+    display: flex;
 }
 
 img {
@@ -28,14 +40,17 @@ img {
 
 #weather span:first-child{
     font-size: 1.5rem;
+}
 
+#weather span:last-child{
+    font-size: 1rem;
 }
 
 #clock {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 12rem;
+    margin-top: 11rem;
     font-size: 6rem;
     color: rgba(255, 255, 255, 0.80);
     font-family: 'Roboto', sans-serif;
@@ -104,7 +119,7 @@ input, textarea {
 }
 
 #quote {
-    margin-top: 12rem;
+    margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
