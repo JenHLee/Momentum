@@ -1,6 +1,6 @@
 # Momentum Chrome App
 Clone coding of Mementum Google Chrome Extension.<br>
-Personal dashboard featuring to-do list, weather, and inspiration quotes to encouraging. <br>
+Personal dashboard featuring to-do list, weather, and inspiration quotes to encourage. <br>
 Achieve your goals faster and more consistently with your own personal dashboard. <br>
 
 ## 🌱 Features 
